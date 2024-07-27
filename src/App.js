@@ -1,23 +1,48 @@
 import logo from './logo.svg';
 import './App.css';
+import './normal.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <aside className = "sidemenu">
+          <div className = "sidemenubutton">
+            <span>+</span>
+            New chat
+          </div>
+      </aside>
+      
+      <section className = "chatbot">
+        <div className='chatlog'>
+          <div className='chatmessage'>
+            <div className='chatmessagecenter'>
+              <div className='avatar'>
+                  
+              </div>
+              <div className='message'>
+                  hi
+              </div>
+            </div>
+            <div className='chatmessageAI'>
+            <div className='chatmessagecenter'>
+              <div className='avatarAI'>
+                  
+              </div>
+              <div className='message'>
+                  I am AI
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div className='chatinputholder'>
+          <textarea rows = '1' 
+          className='chatinput'>
+          </textarea>
+        </div>
+      </section>
+
+
     </div>
   );
 }
