@@ -5,44 +5,13 @@ import './normal.css';
 function App() {
   return (
     <div className="App">
-      <aside className = "sidemenu">
-          <div className = "sidemenubutton">
-            <span>+</span>
-            New chat
-          </div>
-      </aside>
-      
-      <section className = "chatbot">
-        <div className='chatlog'>
-          <div className='chatmessage'>
-            <div className='chatmessagecenter'>
-              <div className='avatar'>
-                  
-              </div>
-              <div className='message'>
-                  hi
-              </div>
-            </div>
-            <div className='chatmessageAI'>
-            <div className='chatmessagecenter'>
-              <div className='avatarAI'>
-                  
-              </div>
-              <div className='message'>
-                  I am AI
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
+      <header className="App-header">
+        <h1>Wildfire Evacuation</h1>
+        <h3>Enter your postal code</h3>
         <div className='chatinputholder'>
-          <textarea rows = '1' 
-          className='chatinput'>
-          </textarea>
+          <textarea rows='1' className='chatinput'></textarea>
         </div>
-      </section>
-
-
+      </header>
     </div>
   );
 }
